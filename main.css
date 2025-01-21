@@ -161,7 +161,7 @@ font-size: 2rem;
     padding: 200px 0;
 } 
 .me {
-  display: ruby;
+  display: contents;
 }
 .body-container {
     display: flex;
