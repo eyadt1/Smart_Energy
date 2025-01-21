@@ -241,7 +241,7 @@ font-size: 2rem;
     margin-top: 20px;
   }
   .me{
-      display:ruby;
+      display:none;
   }
   .sun {
     position: relative;
