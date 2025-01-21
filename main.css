@@ -161,7 +161,7 @@ font-size: 2rem;
     padding: 200px 0;
 } 
 .me {
-  display: contents;
+  display: ruby;
 }
 .body-container {
     display: flex;
@@ -239,6 +239,9 @@ font-size: 2rem;
   }
   .body-container p {
     margin-top: 20px;
+  }
+  .me{
+      display:ruby;
   }
   .sun {
     position: relative;
