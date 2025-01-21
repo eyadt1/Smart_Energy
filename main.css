@@ -249,6 +249,7 @@ font-size: 2rem;
     animation: rotate 4s linear infinite;
     --color: rgb(255, 217, 0);
     --scale: 0.4;
+    margin-right: 15px;
     margin-top: 30px;
   }
   
