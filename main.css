@@ -240,8 +240,11 @@ font-size: 2rem;
   .body-container p {
     margin-top: 20px;
   }
+    .me{
+        display:contents;
+    }
   .sun {
-      display:none;
+/*       display:none; */
     position: relative;
     animation: rotate 4s linear infinite;
     --color: rgb(255, 217, 0);
