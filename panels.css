@@ -1,0 +1,392 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+body {
+    background: #0e1120;
+    color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+    scroll-behavior: smooth;
+}     
+.navbar {
+    background: #0e1120;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    }
+    
+    .navbar__container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    }
+    
+    #navbar__logo {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    }
+    .navbar__menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+        list-style: none;
+    }
+    .navbar__links {
+        text-decoration: none;
+        color: white;
+    }
+    .button {
+        text-decoration: none;
+        font-weight: bolder;
+        color: black;
+    }
+    .navbar__btn {
+        height: 50px;
+        width: 100px;
+        border-radius: 5px;  
+        background-image: linear-gradient(to right, #ff0844 0%, #911616 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+    .navbar__btn:hover {
+        background-image: linear-gradient(to left, #ff0844 0%, #911616 100%);
+        transition: all 0.3s linear;
+    }
+.panels {
+    padding: 100px 0;
+    background: linear-gradient(to right,#161616,black);
+}
+.PP{
+    background: #ffc400;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0eb499, #f39e00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0fdbd1, #f7b80a); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -moz-background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 80px;
+}
+.panels_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 50px;
+    padding-left: 50px;
+}
+.panel_card{
+    border: #fff solid 1px;
+    border-top-left-radius:5px ;
+    border-top-right-radius:5px ;
+    cursor: pointer;
+    width: 302px;
+    color: black;
+}
+.panel_card img{
+    background: linear-gradient(to top, #FFFDE4, #4e7ca3);
+    width: 300px;
+    height: 350px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 1s;
+}
+.panel_card img:hover{
+    filter: blur(5px);
+}
+.panel_name{
+    background-color: white;
+    border: white solid 10px;
+    margin-top: -10px;
+    font-size: small;
+    height: 50px;
+}
+.detail_btn{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 5px;
+    border: none;
+    width: 300px;
+    height: 100px;
+    cursor: pointer;
+}
+.btn{
+    background-color: floralwhite;
+}
+.detail_btn:hover{
+    background-color: rgb(224, 222, 222);
+}
+.footer {
+    background: linear-gradient(to right,#161616,rgb(44, 39, 39));
+    padding: 100px 0;
+  }
+  .footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  .footer-content img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  margin-left: 50px;
+  }
+  .icons {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+  }
+  .icons li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.35rem;
+    background-color: #131313;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+  .icons li i {
+    color: white;
+    transition: all 0.3s;
+  }
+  .icons li:hover {
+    background-color: white;
+    transition: all 0.3s;
+  }
+  .icons li i:hover {
+    color:black;
+  }
+  .footer-container h3 {
+    text-align: center;
+    
+    color: white;
+  }
+  .footer-ab {
+  
+    color: white;
+    
+  }
+  .footer-ab h1 {
+    color: white;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width:760px) {
+    .footer-content {
+      display:grid;
+      justify-content: center;
+    }
+    .footer-content img {
+      display: none;
+    }
+    .icons {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  /* From Uiverse.io by ryota1231 */ 
+.animated-button {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 16px 36px;
+    border: 4px solid;
+    border-color: transparent;
+    font-size: 16px;
+    background-color: ;
+    border-radius: 100px;
+    font-weight: 600;
+    color: #1f387e;
+    box-shadow: 0 0 0 2px #ffffff;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button svg {
+    position: absolute;
+    width: 24px;
+    fill: #1f387e;
+    z-index: 9;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .arr-1 {
+    right: 16px;
+  }
+  
+  .animated-button .arr-2 {
+    left: -25%;
+  }
+  
+  .animated-button .circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    background-color: #c5e5e4;
+    border-radius: 50%;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button .text {
+    position: relative;
+    z-index: 1;
+    transform: translateX(-12px);
+    transition: all 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  
+  .animated-button:hover {
+    box-shadow: 0 0 0 12px transparent;
+    color: #212121;
+    border-radius: 12px;
+  }
+  
+  .animated-button:hover .arr-1 {
+    right: -25%;
+  }
+  
+  .animated-button:hover .arr-2 {
+    left: 16px;
+  }
+  
+  .animated-button:hover .text {
+    transform: translateX(12px);
+  }
+  
+  .animated-button:hover svg {
+    fill: #1f387e;
+  }
+  
+  .animated-button:active {
+    scale: 0.95;
+    box-shadow: 0 0 0 4px greenyellow;
+  }
+  
+  .animated-button:hover .circle {
+    width: 220px;
+    height: 220px;
+    opacity: 1;
+  }
+.button-container p{
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: 30px;
+}
+ /* From Uiverse.io by Z4drus */ 
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.button-3d {
+  -webkit-appearance: none;
+  appearance: none;
+  position: relative;
+  border-width: 0;
+  padding: 0 8px;
+  min-width: 4em;
+  min-height: 4em;
+  box-sizing: border-box;
+  background: transparent;
+  font: inherit;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.button-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  padding: 8px 16px;
+  transform: translateY(0);
+  color: #fff;
+  background-image: linear-gradient(145deg, #6a11cb, #2575fc);
+  text-shadow: 0 -1px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  transition: transform 0.3s, border-radius 0.3s, background 10s;
+}
+
+.button-3d:active .button-top {
+  border-radius: 10px 10px 8px 8px / 8px;
+  transform: translateY(2px);
+  background-image: linear-gradient(145deg, #2575fc, #6a11cb);
+}
+
+.button-bottom {
+  position: absolute;
+  z-index: 1;
+  bottom: 4px;
+  left: 4px;
+  border-radius: 20px;
+  padding-top: 6px;
+  width: calc(100% - 8px);
+  height: calc(100% - 10px);
+  background-image: linear-gradient(145deg, #2575fc, #6a11cb);
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.5);
+  transition: border-radius 0.2s, padding-top 0.2s;
+}
+
+.button-base {
+  position: absolute;
+  z-index: 0;
+  top: 4px;
+  left: 0;
+  border-radius: 20px;
+  width: 100%;
+  height: calc(100% - 4px);
+  background-color: rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 1px 0 rgba(255, 255, 255, 0.75),
+    inset 0 2px 2px rgba(0, 0, 0, 0.25);
+  transition: border-radius 0.2s, padding-top 0.2s;
+}
+
+.button-3d:active .button-bottom {
+  border-radius: 10px 10px 8px 8px / 8px;
+  padding-top: 0;
+}
+
+.button-3d:active .button-base {
+  border-radius: 10px 10px 8px 8px / 8px;
+}
