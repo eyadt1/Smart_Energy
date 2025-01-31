@@ -146,6 +146,10 @@
     font-size: 1.5rem;
     font-weight: bolder;
 }
+.avia_textblock li{
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
 .avia_textblock a{
     color: rgb(17, 239, 255);
     font-size: 1.5rem;
