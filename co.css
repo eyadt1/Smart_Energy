@@ -63,7 +63,7 @@
 .container1{
     width: 100%;
     height: 100vh;
-    background: url(imgs/container1.jpg) no-repeat center;
+    background: url(container1.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
     display: flex;
@@ -246,7 +246,7 @@ padding-left : 20px;
 }
 .services {
     padding: 200px 0;
-    background: url(imgs/container2.jpg) no-repeat center;
+    background: url(container2.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
   }
@@ -336,7 +336,7 @@ padding-left : 20px;
   }
   
   .flip-card-back {
-    background: url(imgs/ba.jpeg);
+    background: url(ba.jpeg);
     background-size: cover;
     background-position: center;
     color: white;
